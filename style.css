@@ -143,11 +143,23 @@ p {
   align-items: center;
   padding: 31px 0 22px 0;
 }
+.service:hover {
+  background-color: #76c38f;
+}
 
 .service-poster {
   height: 120px;
   width: 120px;
   background-color: #333333;
+}
+.service:hover .service-poster {
+  background-color: #ffffff;
+  transition: background-color 300ms linear;
+}
+.service:hover .service-title,
+.service:hover .service-description {
+  color: #ffffff;
+  transition: color 300ms linear;
 }
 
 .service-title {
@@ -218,6 +230,7 @@ p {
 
 .item:hover {
   border-color: #76c38f;
+  transition: border-color 300ms linear;
 }
 
 .item:hover .item-title {
@@ -249,10 +262,12 @@ nav > a {
   color: white;
   padding: 13px 20px;
   border-radius: 10px;
+  transition: background-color 300ms linear;
 }
 
 nav > a:hover {
   background-color: #76c38f;
+  transition: background-color 300ms linear;
 }
 
 .footer-section {
